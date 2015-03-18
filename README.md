@@ -12,7 +12,7 @@ task, piece of work, problem, assignment, piece of school work, piece of homewor
 
 ## Description
 
-I reuse to use the 'Kata'... However they can explain it better than I can so here goes:
+I refuse to use the 'Kata'... However they can explain it better than I can so here goes:
 
 >A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition. The term was probably first coined by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.
 
@@ -35,3 +35,7 @@ commit history. It will also keep me honest :)
 | -------- | -------- | ---- |
 | [exercisename](URL) | Language | DOW dd MM YYY | 
 
+## TODO
+
+A list of [excerises](https://github.com/swmcc/exercises/issues) that I intend to complete.
+This list will be added to as I think of them.
