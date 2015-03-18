@@ -37,5 +37,5 @@ commit history. It will also keep me honest :)
 
 ## TODO
 
-A list of [excerises](https://github.com/swmcc/exercises/issues) that I intend to complete.
+A list of [exercises](https://github.com/swmcc/exercises/issues) that I intend to complete.
 This list will be added to as I think of them.
