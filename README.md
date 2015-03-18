@@ -32,4 +32,8 @@ commit history. It will also keep me honest :)
 
 ## Exercises 
 
-[exercise](URL) 
+
+| Exercise | Language | Date |
+| -------- | -------- | ---- |
+| [exercisename](URL) | Language | DOW dd MM YYY | 
+
