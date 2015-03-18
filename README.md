@@ -14,9 +14,7 @@ task, piece of work, problem, assignment, piece of school work, piece of homewor
 
 I reuse to use the 'Kata'... However they can explain it better than I can so here goes:
 
-```
-A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition. The term was probably first coined by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.
-```
+>A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition. The term was probably first coined by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.
 
 This is a  simple index repo for the programming exercises that I want to do.
 There will be no code in here, The only thing that will change in here
