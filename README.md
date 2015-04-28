@@ -33,7 +33,7 @@ commit history. It will also keep me honest :)
 
 | Exercise | Language | Date |
 | -------- | -------- | ---- |
-| [exercisename](URL) | Language | DOW dd MM YYY | 
+| [Snap](http://www.github.com/swmcc/exercises/snap/ruby) | Ruby | week 28th April 2015 | 
 
 ## TODO
 
