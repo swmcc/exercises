@@ -1,8 +1,10 @@
 require 'spec_helper'
-require 'cards'
+require 'deck'
 
-describe Cards do
+describe Deck do
   it 'can give you a deck of cards' do
-    described_class.new.deck()
+    deck = described_class.new()
+    print deck
+    expect(deck.count).to eq 52 
   end
 end
