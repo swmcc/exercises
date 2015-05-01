@@ -9,4 +9,8 @@ class Card
   end
   attr_reader :rank, :suit
 
+  def description()
+    "@rank + @suit"
+  end
+
 end
