@@ -2,12 +2,12 @@ require 'spec_helper'
 require 'card'
 require 'deck'
 
-#describe Card do
-#  it 'can give you a specific card' do
-#    card = Card.new('S', 2)
-#    card.description.expect == '2S'
-#  end
-#end
+describe Card do
+  it 'can give you a specific card' do
+    card = Card.new(2, 'S')
+    expect(card.description).to eq('2S')
+  end
+end
 
 describe Deck do
   it 'can give you a deck of cards' do
