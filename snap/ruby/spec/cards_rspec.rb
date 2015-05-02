@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'card'
 require 'deck'
+require 'hand'
 
 describe Card do
   it 'can give you a specific card' do
@@ -43,5 +44,12 @@ describe Deck do
     end
 
     expect(@deck.done?).to be true
+  end
+end
+
+describe Hand do
+  it 'represents a number of cards' do
+    @hand = described_class.new()
+    expect(@hand.cards).to be_a Array 
   end
 end
