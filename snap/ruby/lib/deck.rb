@@ -25,6 +25,6 @@ class Deck
   end
 
   def deal
-    @deck.pop(1)
+    @deck.shift
   end
 end
