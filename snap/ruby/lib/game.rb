@@ -2,7 +2,7 @@ require 'player'
 
 class Game
 
-  def initialize(player_names) 
+  def initialize(player_names, no_of_decks || 1) 
     @players = []
     player_names.each do |name| 
       @players << Player.new(name)
