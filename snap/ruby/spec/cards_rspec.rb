@@ -11,12 +11,12 @@ describe Card do
 end
 
 describe Deck do
-  it 'can give you a deck of cards' do
+  it 'represents fifty two cards' do
     @deck = described_class.new()
     expect(@deck.count).to eq 52 
   end
 
-  it 'can shuffle a deck of cards' do
+  it 'can shuffle these deck of cards' do
     @deck = described_class.new()
     @deck.shuffle
     expect(@deck.count).to eq 52 
@@ -24,6 +24,17 @@ describe Deck do
 
   it 'can tell you when all the cards are dealt' do
     @deck = described_class.new()
+
+    for i in 1..42
+      @deck.deal
+    end
+
     expect(@deck.done).to be false
+
+    for i in 1..52
+      @deck.deal 
+    end
+
+    expect(@deck.done).to be true
   end
 end

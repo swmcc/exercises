@@ -24,4 +24,7 @@ class Deck
     @deck.empty?
   end
 
+  def deal
+    @deck.pop(1)
+  end
 end
