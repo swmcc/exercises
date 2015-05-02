@@ -6,7 +6,13 @@ require 'hand'
 require 'player'
 
 describe Game do
-  it 'represents a game being played with three players'
+  it 'represents a game being played with three players' do
+    @game = Game.new()
+
+    expect(@game.players).to be_a Array
+    expect(@game.players.length).to eq 3
+    expect(@game.players[0]).to be_a Player
+  end
 end
 
 describe Player do
