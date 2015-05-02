@@ -7,4 +7,5 @@ class Player
   end
   attr_reader :name
 
+
 end

@@ -2,11 +2,12 @@ require 'player'
 
 class Game
 
-  def initialize()
+  def initialize(player_names) 
+    @players = []
+    player_names.each do |name| 
+      @players << Player.new(name)
+    end
   end
-
-  def players
-    [ Player.new('Batman'), Player.new('Superman'), Player.new('Flash') ]
-  end
+  attr_reader :players
 
 end

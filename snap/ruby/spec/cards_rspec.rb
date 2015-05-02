@@ -7,7 +7,7 @@ require 'player'
 
 describe Game do
   it 'represents a game being played with three players' do
-    @game = Game.new()
+    @game = Game.new(['Batman', 'Superman', 'Flash'])
 
     expect(@game.players).to be_a Array
     expect(@game.players.length).to eq 3
