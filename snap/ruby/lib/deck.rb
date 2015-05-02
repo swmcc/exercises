@@ -20,4 +20,8 @@ class Deck
     @deck.shuffle
   end
 
+  def done
+    @deck.empty?
+  end
+
 end

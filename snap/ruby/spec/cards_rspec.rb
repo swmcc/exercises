@@ -4,20 +4,26 @@ require 'deck'
 
 describe Card do
   it 'can give you a specific card' do
-    card = Card.new(2, 'S')
-    expect(card.description).to eq('2S')
+    @card = Card.new(2, 'S')
+    expect(@card).to be_a Card
+    expect(@card.description).to eq('2S')
   end
 end
 
 describe Deck do
   it 'can give you a deck of cards' do
-    deck = described_class.new()
-    expect(deck.count).to eq 52 
+    @deck = described_class.new()
+    expect(@deck.count).to eq 52 
   end
 
   it 'can shuffle a deck of cards' do
-    deck = described_class.new()
-    deck.shuffle
-    expect(deck.count).to eq 52 
+    @deck = described_class.new()
+    @deck.shuffle
+    expect(@deck.count).to eq 52 
+  end
+
+  it 'can tell you when all the cards are dealt' do
+    @deck = described_class.new()
+    expect(@deck.done).to be false
   end
 end
