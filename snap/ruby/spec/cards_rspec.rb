@@ -1,7 +1,29 @@
 require 'spec_helper'
 require 'card'
 require 'deck'
+require 'game'
 require 'hand'
+require 'player'
+
+describe Game do
+  it 'represents a game being played with three players'
+end
+
+describe Player do
+  it 'represents a person playing the game' do
+    @player = described_class.new('Player One')
+    @player2 = described_class.new('Player Two')
+    expect(@player.name).to eq 'Player One'
+    expect(@player2.name).to eq 'Player Two'
+  end
+end
+
+describe Hand do
+  it 'represents a number of cards' do
+    @hand = described_class.new()
+    expect(@hand.cards).to be_a Array 
+  end
+end
 
 describe Card do
   it 'can give you a specific card' do
@@ -47,9 +69,4 @@ describe Deck do
   end
 end
 
-describe Hand do
-  it 'represents a number of cards' do
-    @hand = described_class.new()
-    expect(@hand.cards).to be_a Array 
-  end
-end
+
