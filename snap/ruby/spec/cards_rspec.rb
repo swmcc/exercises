@@ -25,7 +25,10 @@ describe Deck do
   it 'can tell you when all the cards are dealt' do
     @deck = described_class.new()
 
-    for i in 1..42
+    @card = @deck.deal
+    expect(@card).to be_a Card
+
+    for i in 1..41
       @deck.deal
     end
 
