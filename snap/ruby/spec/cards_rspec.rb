@@ -6,12 +6,24 @@ require 'hand'
 require 'player'
 
 describe Game do
-  it 'represents a game being played with three players' do
+  it 'represents a game being played with three players and one deck' do
     @game = Game.new(['Batman', 'Superman', 'Flash'])
-
     expect(@game.players).to be_a Array
     expect(@game.players.length).to eq 3
     expect(@game.players[0]).to be_a Player
+    expect(@game.cards).to be_a Hash
+    expect(@game.cards.count).to eq 52
+    expect(@game.cards['AH']).to eq 1 
+  end
+  
+  it 'represents a game being played with three players and two decks' do
+    @game = Game.new(['Batman', 'Superman', 'Flash'], 2)
+    expect(@game.players).to be_a Array
+    expect(@game.players.length).to eq 3
+    expect(@game.players[0]).to be_a Player
+    expect(@game.cards).to be_a Hash
+    expect(@game.cards.count).to eq 52 
+    expect(@game.cards['AH']).to eq 2
   end
 end
 

@@ -25,9 +25,7 @@ class Deck
   end
 
   def deal
-    unless self.done?
-      @deck.shift
-    end
+    @deck.shift
   end
 
 end
