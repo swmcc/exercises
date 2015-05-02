@@ -32,12 +32,12 @@ describe Deck do
       @deck.deal
     end
 
-    expect(@deck.done).to be false
+    expect(@deck.done?).to be false
 
     for i in 1..52
       @deck.deal 
     end
 
-    expect(@deck.done).to be true
+    expect(@deck.done?).to be true
   end
 end

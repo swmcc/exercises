@@ -17,14 +17,16 @@ class Deck
   end
 
   def shuffle 
-    @deck.shuffle
+    @deck.shuffle!
   end
 
-  def done
+  def done?
     @deck.empty?
   end
 
   def deal
-    @deck.shift
+    unless self.done?
+      @deck.shift
+    end
   end
 end
