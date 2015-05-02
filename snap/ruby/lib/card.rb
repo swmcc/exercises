@@ -10,7 +10,7 @@ class Card
   attr_reader :rank, :suit
 
   def description
-    sprintf("%d%s", @rank, @suit)
+    sprintf("%s%s", @rank, @suit)
   end
 
 end

@@ -7,7 +7,11 @@ describe Card do
     @card = Card.new(2, 'S')
     expect(@card).to be_a Card
     expect(@card.description).to eq('2S')
+    
+    @card = Card.new('A', 'H')
+    expect(@card.description).to eq('AH')
   end
+
 end
 
 describe Deck do
