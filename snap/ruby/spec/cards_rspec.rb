@@ -25,6 +25,14 @@ describe Game do
     expect(@game.cards.count).to eq 52 
     expect(@game.cards['AH']).to eq 2
   end
+
+  it 'the game can deal out the cards it has to each player' do
+    @game = Game.new(['Batman', 'Superman', 'Flash'], 2)
+    @player = @game.players[0]
+    expect(@player.hand).to be_a Hash
+    expect(@game.deal).to be true
+  end
+
 end
 
 describe Player do
@@ -34,6 +42,12 @@ describe Player do
     expect(@player.name).to eq 'Player One'
     expect(@player2.name).to eq 'Player Two'
   end
+
+  it 'a player can be given a hand which is a set of cards' do
+    @player = described_class.new('Aquaman')
+    expect(@player.hand).to be_a Hash
+  end
+
 end
 
 describe Hand do

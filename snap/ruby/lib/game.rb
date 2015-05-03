@@ -22,4 +22,14 @@ class Game
   end
   attr_reader :players, :cards
 
+  def deal
+    @cards.each do |card, count|
+      printf "%s => %s\n", card, count 
+      #@players.each do |player|
+      #  print player.name
+      #end
+    end
+    true
+  end
+  
 end
